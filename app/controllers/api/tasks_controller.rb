@@ -1,4 +1,5 @@
-class TasksController < ApplicationController
+module Api
+  class TasksController < ApplicationController
   before_action :validate_user
 
   def show
@@ -87,4 +88,5 @@ class TasksController < ApplicationController
       false
     end
   end
+end
 end
