@@ -1,10 +1,14 @@
 <%= javascript_pack_tag 'index', 'data-turbolinks-track': 'reload' %>
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1 class="text-center mt-4">To Do List</h1>
-      <div class="row" id="tasks"></div>
+<div class="main-container">
+      <div class="date-container"></div>
+      <div class="input-container">
+        <input id="input" class="input-item" placeholder="Add new task" />
+      </div>
+      <ul class="status-list">
+        <li class="btn-all"><i class="fa-sharp fa-solid fa-list"></i></li>
+        <li class="btn-active"><i class="fa-solid fa-spinner"></i></li>
+        <li class="btn-completed"><i class="fa-solid fa-check-double"></i></li>
+      </ul>
+      <div id="todo-list"></div>
     </div>
-  </div>
-</div>
